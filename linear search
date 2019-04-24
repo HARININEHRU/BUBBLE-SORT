@@ -1,0 +1,28 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+int a[10],i,n,search,flag=0;
+clrscr();
+printf("enter the no of elements");
+scanf("%d",&n);
+for(i=0;i<n;i++)
+{
+printf("enter the %d element",i+1);
+scanf("%d",&a[i]);
+}
+printf("element to search");
+scanf("%d",&search);
+for(i=0;i<n;i++)
+if(search==a[i])
+{
+flag=1;
+break;
+}
+if(flag==1)
+printf("the element %d is found",search);
+else
+printf("element %d is not found",search);
+getch();
+return 0;
+}
